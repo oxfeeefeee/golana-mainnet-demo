@@ -118,7 +118,7 @@ export const SwapComp: FC = () => {
       <p>
       <Link href="https://github.com/oxfeeefeee/golana-mainnet-demo" style={{ color: '#000', textDecoration: 'underline' }}> Source of this website </Link>
       <br/>
-      <Link href="https://github.com/oxfeeefeee/golana/tree/main/examples/swap" style={{ color: '#000', textDecoration: 'underline' }}> Source of on chain program </Link>
+      <Link href="https://github.com/oxfeeefeee/golana/tree/main/examples/swap" style={{ color: '#000', textDecoration: 'underline' }}> Source of the on-chain program </Link>
       </p>
       <hr style={{ margin: '40px 0' }} />
       <div style={{ display: 'flex', flexDirection: 'column' }}>
