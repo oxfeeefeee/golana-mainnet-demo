@@ -120,7 +120,7 @@ export const SwapComp: FC = () => {
       <br/>
       <Link href="https://github.com/oxfeeefeee/golana/tree/main/examples/swap" style={{ color: '#000', textDecoration: 'underline' }}> Source of the on-chain program </Link>
       </p>
-      <hr style={{ margin: '40px 0' }} />
+      <hr style={{ margin: '10px 0' }} />
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         {/* <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleInit} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Init </button> */}
         {/* <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleCreatePool} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Create Pool </button> */}
@@ -131,6 +131,7 @@ export const SwapComp: FC = () => {
           <input type="number" id="greet-count" value={forB} onChange={(e) => setForB(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
         </div>
         <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleTrade1} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Trade </button>
+        <hr style={{ margin: '10px 0' }} />
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
           <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>Trade BONK</label>
           <input type="number" id="greet-count" value={tradeB} onChange={(e) => setTradeB(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
@@ -147,6 +148,7 @@ export const SwapComp: FC = () => {
           <input type="number" id="greet-count" value={depositeB} onChange={(e) => setDepositeB(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
         </div>
         <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleDeposite} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Deposite </button>
+        <hr style={{ margin: '10px 0' }} />
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
           <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>Withdraw:</label>
           <input type="number" id="greet-count" value={withdraw} onChange={(e) => setWithdraw(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
