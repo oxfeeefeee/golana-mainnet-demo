@@ -4,7 +4,7 @@ import { SwapComp } from '../components/Swap'
 
 const IndexPage = () => {
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
+    <Layout title="Dogswap | Golana -- Golang for Solana">
       <SwapComp />
     </Layout>
   )
