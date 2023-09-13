@@ -5,6 +5,7 @@ import {Program, initProvider} from 'golana';
 import {ComputeBudgetProgram, Keypair, PublicKey, SystemProgram, Transaction, VersionedTransactionResponse } from '@solana/web3.js';
 import React, { FC, useCallback, useState } from 'react';
 import BN from 'bn.js';
+import Link from 'next/link'
 
 function getLogStr(response?: VersionedTransactionResponse, somethingElse: string = ''): string {
   return JSON.stringify(response?.meta?.logMessages ?? "Failed to get transaction log, it may or may not have failed", null, 2);
@@ -111,6 +112,15 @@ export const SwapComp: FC = () => {
 
     return (
     <div>
+      <h1 style={{ fontSize: '2rem' }}>Dogswap mainnet demo</h1>
+      <p style={{ fontSize: '1rem' }}>A uniswap v2 style swap made with Golana for you to swap dog coins.</p>
+      <p style={{ fontSize: '1rem' }}>Please use a burner wallet, as this is just a demo site and we cannot fully trust its security measures.</p>
+      <p>
+      <Link href="https://github.com/oxfeeefeee/golana-mainnet-demo" style={{ color: '#000', textDecoration: 'underline' }}> Source of this website </Link>
+      <br/>
+      <Link href="https://github.com/oxfeeefeee/golana/tree/main/examples/swap" style={{ color: '#000', textDecoration: 'underline' }}> Source of on chain program </Link>
+      </p>
+      <hr style={{ margin: '40px 0' }} />
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         {/* <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleInit} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Init </button> */}
         {/* <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleCreatePool} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Create Pool </button> */}
