@@ -125,33 +125,33 @@ export const SwapComp: FC = () => {
         {/* <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleInit} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Init </button> */}
         {/* <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleCreatePool} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Create Pool </button> */}
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>Trade SAMO</label>
           <input type="number" id="greet-count" value={tradeA} onChange={(e) => setTradeA(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
-          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>For BONK</label>
+          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>SAMO for (at least)</label>
           <input type="number" id="greet-count" value={forB} onChange={(e) => setForB(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
+          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>BONK</label>
         </div>
         <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleTrade1} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Trade </button>
         <hr style={{ margin: '10px 0' }} />
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>Trade BONK</label>
           <input type="number" id="greet-count" value={tradeB} onChange={(e) => setTradeB(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
-          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>For SAMO</label>
+          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>Bonk for (at least)</label>
           <input type="number" id="greet-count" value={forA} onChange={(e) => setForA(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
+          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>SAMO</label>
         </div>
         <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleTrade2} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Trade </button>
         {/*  Add a seperation line and some vertial space here: */}
         <hr style={{ margin: '40px 0' }} />
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>Deposite: SAMO</label>
           <input type="number" id="greet-count" value={depositeA} onChange={(e) => setDepositeA(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
-          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>BONK</label>
+          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>SAMO</label>
           <input type="number" id="greet-count" value={depositeB} onChange={(e) => setDepositeB(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
+          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>BONK</label>
         </div>
         <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleDeposite} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Deposite </button>
         <hr style={{ margin: '10px 0' }} />
         <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>Withdraw:</label>
           <input type="number" id="greet-count" value={withdraw} onChange={(e) => setWithdraw(parseInt(e.target.value))} style={{ borderRadius: '5px', width: '200px', fontSize: '1.2rem', backgroundColor: '#f5f5f5', border: '1px solid #ccc', padding: '5px' }} />
+          <label style={{ fontSize: '1.2rem', marginRight: '10px' }}>LP token</label>
         </div>
         <button className={`big-button bg-green-500 text-white hover:bg-green-700 ${!publicKey ? 'opacity-50 cursor-not-allowed' : ''}`} onClick={handleWithdraw} disabled={!publicKey} style={{ borderRadius: '5px', width: '200px', fontSize: '1.5rem', marginBottom: '20px' }}> Withdraw </button>
         <p style={{ fontSize: '1.2rem', marginRight: '10px' }}>LP Token: {mintLP.toBase58()}</p>
